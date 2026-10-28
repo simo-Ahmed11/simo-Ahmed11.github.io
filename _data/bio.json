@@ -12,15 +12,7 @@
       { "network": "github", "username": "simo-Ahmed11", "url": "http://github.com/simo-Ahmed11" },
       { "network": "linkedin", "username": "Ahmed Baali", "url": "www.linkedin.com/in/ahmed-baali-b30326319" }
     ]
-  },
-  "interests": [
-    {
-      "name": "aeronautics",
-      "name": "energy transitions",
-      "name": "fishing",
-      "name": "sports (triathlon)",
-      "name": "traveling"
-    }
+  }
   ],
   "skills": [
     {
