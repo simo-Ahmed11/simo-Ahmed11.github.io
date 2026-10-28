@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/micro-pump_logo.png
 title: "micro-pump-of-insulin"
 date: 2026
 published: true
