@@ -15,7 +15,7 @@
   },
   "interests": [
     { "name": "aeronautics" },
-    { "name": "energie transition" },
+    { "name": "energy transitions" },
     { "name": "fishing" },
     { "name": "sports (triathlon) " },
     { "name": "traveling" }
@@ -35,6 +35,23 @@
       "endDate": "Present",
       "courses": [
       ]
+    },
+    {
+      "institution": "Les classes préparatoires d'excellence de Casablanca",
+      "area": "MPSI -> MP*",
+      "startDate": "2024",
+      "endDate": "2026",
+      "courses": [
+      ]
+    },
+    {
+      "institution": " Lycée Moulay Ismail, Meknes ",
+      "area": "Sciences Maths",
+      "startDate": "2021",
+      "endDate": "2024",
+      "mention": "mention très bien, 18,25/20",
+      "courses": [
+      ]
     }
   ],
   "volunteer": [
@@ -48,9 +65,11 @@
       ]
     }
   ],
-  "references": [
+  "interests": [
     {
-      "name": "Available upon request"
+      "Sports": "hinking, running, taekwondo, triathlon, volley-ball",
+      "nature": "fishing, hiking",
+      "traveling": ""
     }
   ]
 }
