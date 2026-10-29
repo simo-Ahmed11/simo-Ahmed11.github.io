@@ -1,11 +1,18 @@
-<header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+<header class="navbar navbar-expand-md navbar-light bg-light bg-gradient border-bottom sticky-top tf-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.data.bio.basics.name }}</a>
-    <div class="ms-auto">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <a class="nav-link" href="{{ '/#projects' | prepend: site.baseurl }}">Projects</a>
-        <a class="nav-link" href="{{ '/#essays' | prepend: site.baseurl }}">Essays</a>
-        <a class="nav-link" href="{{ '/resume.html' | prepend: site.baseurl }}">Resume</a>
+    <a class="navbar-brand fw-bold" href="{{ '/' | prepend: site.baseurl }}">{{ site.data.bio.basics.name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tf-nav" aria-controls="tf-nav" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="tf-nav">
+      <ul class="navbar-nav ms-auto align-items-md-center">
+        <li class="nav-item"><a class="nav-link" href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/#projects' | prepend: site.baseurl }}">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/#essays' | prepend: site.baseurl }}">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/mobilite/' | prepend: site.baseurl }}">Mobilité</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/engagement/' | prepend: site.baseurl }}">Engagement</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/resume.html' | prepend: site.baseurl }}">Resume</a></li>
+        <li class="nav-item ms-md-2"><a class="btn btn-sm tf-btn" href="{{ '/cv/' | prepend: site.baseurl }}">CV (FR / EN)</a></li>
       </ul>
     </div>
   </div>
