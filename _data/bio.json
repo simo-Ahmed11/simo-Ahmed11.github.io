@@ -1,3 +1,4 @@
+
 {
   "basics": {
     "name": "Ahmed Baali",
@@ -9,18 +10,16 @@
     "summary": "I am a first year student and I'm studying for an ingineering diploma in fluid mechanics, energies and environement in the Department of MF2E at the ENSEEIHT.",
     "location": { "address": "", "postalCode": "31500", "city": "Toulouse", "countryCode": "France", "region": "Haute-Garonne" },
     "profiles": [
-      { "network": "github", "username": "simo-Ahmed11", "url": "http://github.com/simo-Ahmed11" },
-      { "network": "linkedin", "username": "Ahmed Baali", "url": "www.linkedin.com/in/ahmed-baali-b30326319" }
+      { "network": "github", "username": "simo-Ahmed11", "url": "https://github.com/simo-Ahmed11" },
+      { "network": "linkedin", "username": "Ahmed Baali", "url": "https://www.linkedin.com/in/ahmed-baali-b30326319" }
     ]
   },
   "interests": [
-    {
-      "name": "aeronautics",
-      "name": "energy transitions",
-      "name": "fishing",
-      "name": "sports (triathlon)",
-      "name": "traveling"
-    }
+    {"name": "aeronautics"},
+	{"name": "energy transitions"},
+	{"name": "fishing"},
+	{"name": "sports (triathlon)"},
+	{"name": "traveling"}
   ],
   "skills": [
     {
@@ -65,13 +64,6 @@
       "summary": "help students in same age or younger than me in their studies",
       "highlights": [
       ]
-    }
-  ],
-  "interests": [
-    {
-      "Sports": "hinking, running, taekwondo, triathlon, volley-ball",
-      "nature": "fishing, hiking",
-      "traveling": ""
     }
   ]
 }
