@@ -1,0 +1,40 @@
+---
+title: CV
+layout: home
+permalink: /cv/
+---
+
+{% assign cv_fr = '/assets/CV_Ahmed_Baali_FR.pdf' | prepend: site.baseurl %}
+{% assign cv_en = '/assets/CV_Ahmed_Baali_EN.pdf' | prepend: site.baseurl %}
+
+<div style="background-color: var(--tf-page-bg-color)" class="py-4">
+  <div class="container">
+    <h1 class="display-4 mb-4">CV</h1>
+
+    <ul class="nav nav-pills mb-3" id="cv-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="cv-fr-tab" data-bs-toggle="pill" data-bs-target="#cv-fr" type="button" role="tab" aria-controls="cv-fr" aria-selected="true">Français</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cv-en-tab" data-bs-toggle="pill" data-bs-target="#cv-en" type="button" role="tab" aria-controls="cv-en" aria-selected="false">English</button>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="cv-fr" role="tabpanel" aria-labelledby="cv-fr-tab" tabindex="0">
+        <p>
+          <a class="btn tf-btn" href="{{ cv_fr }}" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
+          <a class="btn btn-outline-dark" href="{{ cv_fr }}" download>Télécharger (PDF)</a>
+        </p>
+        <iframe class="cv-frame" src="{{ cv_fr }}" title="CV en français"></iframe>
+      </div>
+      <div class="tab-pane fade" id="cv-en" role="tabpanel" aria-labelledby="cv-en-tab" tabindex="0">
+        <p>
+          <a class="btn tf-btn" href="{{ cv_en }}" target="_blank" rel="noopener">Open in a new tab</a>
+          <a class="btn btn-outline-dark" href="{{ cv_en }}" download>Download (PDF)</a>
+        </p>
+        <iframe class="cv-frame" src="{{ cv_en }}" title="CV in English"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
