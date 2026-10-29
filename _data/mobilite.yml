@@ -1,0 +1,8 @@
+# Une entrée = une carte sur la page Mobilité.
+# Champs : title, place, period, description, tags (liste), image (ex: img/ma-photo.jpg), link, link_label
+- title: "Votre première expérience de mobilité (à compléter)"
+  place: "Ville, Pays"
+  period: "Année"
+  description: "Décrivez en 2 ou 3 phrases ce que vous avez fait et appris pendant cette expérience."
+  tags:
+    - Exemple
