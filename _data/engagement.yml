@@ -1,0 +1,9 @@
+# Une entrée = une carte sur la page Engagement.
+# Champs : title, place, period, description, tags (liste), image (ex: img/ma-photo.jpg), link, link_label
+- title: "Enseignant de soutien scolaire"
+  place: "Centre de soutien scolaire"
+  period: "2023 – 2024"
+  description: "Aide apportée à des élèves de mon âge ou plus jeunes dans leurs études."
+  tags:
+    - Bénévolat
+    - Enseignement
