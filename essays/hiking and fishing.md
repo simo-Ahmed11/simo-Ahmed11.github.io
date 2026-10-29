@@ -1,5 +1,5 @@
 ---
-layout: interests
+layout: essay
 type: essay
 title: "hiking & sports & travels"
 # All dates must be YYYY-MM-DD format!
