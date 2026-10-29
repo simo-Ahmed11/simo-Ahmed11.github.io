@@ -1,0 +1,34 @@
+{%- comment -%}
+  Grille de cartes alimentée par un fichier de _data.
+  Usage : voir mobilite.html et engagement.html
+{%- endcomment -%}
+<div class="row g-3">
+  {% for item in include.items %}
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 tf-card">
+      {% if item.image %}
+      <img src="{{ item.image | prepend: '/' | prepend: site.baseurl }}" class="card-img-top" alt="{{ item.title | escape }}">
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        {% if item.place or item.period %}
+        <p class="card-text"><small class="text-muted">{{ item.place }}{% if item.place and item.period %} · {% endif %}{{ item.period }}</small></p>
+        {% endif %}
+        <p class="card-text">{{ item.description }}</p>
+        {% if item.tags %}
+        <p class="mb-0">
+          {% for tag in item.tags %}
+          <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ tag }}</span>
+          {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+      {% if item.link %}
+      <div class="card-footer text-center">
+        <a href="{{ item.link }}" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">{{ item.link_label | default: "En savoir plus" }}</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
