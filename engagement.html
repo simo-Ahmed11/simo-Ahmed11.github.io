@@ -4,9 +4,36 @@ layout: home
 permalink: /engagement/
 ---
 
-<div style="background-color: var(--tf-page-bg-color)" class="py-4">
+<section class="eng-section py-5">
   <div class="container">
-    <h1 class="display-4 mb-4">Engagement</h1>
-    {% include cards/grid.html items=site.data.engagement %}
+    <h1 class="eng-title">Engagement</h1>
+    <div class="mob-rule" aria-hidden="true"></div>
+
+    {% for item in site.data.engagement %}
+    <article class="eng-card">
+      <header class="eng-head">
+        <div class="eng-icon" aria-hidden="true">🤝</div>
+        <div>
+          <h2 class="eng-name">{{ item.title }}</h2>
+          <p class="eng-meta">
+            {% if item.role %}<span class="eng-role">{{ item.role }}</span>{% endif %}
+            {% if item.place %}<span aria-hidden="true">📍</span> {{ item.place }}{% endif %}
+          </p>
+        </div>
+      </header>
+
+      <div class="eng-body">
+        {% for p in item.paragraphs %}
+        <p class="eng-text{% if forloop.first %} eng-dropcap{% endif %}">{{ p }}</p>
+        {% endfor %}
+      </div>
+
+      {% if item.tags %}
+      <footer class="eng-tags">
+        {% for tag in item.tags %}<span class="eng-tag">{{ tag }}</span>{% endfor %}
+      </footer>
+      {% endif %}
+    </article>
+    {% endfor %}
   </div>
-</div>
+</section>

@@ -1,9 +1,15 @@
-# Une entrée = une carte sur la page Engagement.
-# Champs : title, place, period, description, tags (liste), image (ex: img/ma-photo.jpg), link, link_label
-- title: "Enseignant de soutien scolaire"
-  place: "Centre de soutien scolaire"
-  period: "2023 – 2024"
-  description: "Aide apportée à des élèves de mon âge ou plus jeunes dans leurs études."
+# Une entrée = un bloc sur la page Engagement.
+# Champs : title, place, role, paragraphs (liste), tags (liste)
+- title: "Peer tutoring & academic support"
+  place: "Lycée Moulay Ismaïl, Meknes"
+  role: "Volunteer tutor"
+  paragraphs:
+    - "During my academic journey at Lycée Moulay Ismaïl in Meknes, I had the rewarding opportunity to engage in meaningful volunteer work by providing personalized tutoring and academic support to fellow students. Driven by a passion for sharing knowledge and fostering mutual growth, I spent significant time assisting both peers at my own academic level and younger students navigating challenging coursework. My primary focus was on simplifying complex concepts in core scientific subjects, helping them build solid analytical foundations, structure their study methods, and regain confidence in their abilities before examinations."
+    - "This volunteering experience proved to be profoundly enriching on both a personal and professional level. Teaching complex topics required me to adapt my communication style to fit each student's unique learning speed and background, which significantly strengthened my pedagogical skills, patience, and active listening. Furthermore, balancing my own rigorous academic workload while dedicating time to mentoring others reinforced my organizational abilities, self-discipline, and strong sense of commitment. Guiding my peers through difficult academic hurdles and witnessing their progress brought me immense motivation and taught me the true value of empathy in leadership. Beyond the technical knowledge imparted, this meaningful initiative highlights my enthusiasm for teamwork, knowledge sharing, and peer support—qualities that continue to shape my collaborative mindset as an engineering student today and will undoubtedly serve me well in my future professional endeavors."
   tags:
-    - Bénévolat
-    - Enseignement
+    - Volunteering
+    - Teaching
+    - Active listening
+    - Organization
+    - Empathy
+    - Teamwork
