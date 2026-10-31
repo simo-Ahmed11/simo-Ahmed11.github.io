@@ -1,23 +1,55 @@
 <div style="background-color: var(--bs-white)" class="bg-gradient py-3" id="essays">
   <div class="container">
+    {% if include.video %}
+    <div class="row mb-4">
+      <div class="col-12">
+        <h1 class="display-4 text-center">About me</h1>
+      </div>
+    </div>
+    {% else %}
     <div class="row mb-3">
       <div class="col-md-6">
         <h1 class="display-4 text-start">About me</h1>
       </div>
     </div>
+    {% endif %}
 
-    <div class="row g-3">
+    {% capture essay_cards %}
       {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
       {% for page in essay_pages %}
         {% unless page.draft %}
-          {% include essays/essay-card.html page=page %}
+          {% include essays/essay-card.html page=page wide=include.video %}
         {% endunless %}
         {% if forloop.index == include.limit %}
           {% break %}
         {% endif %}
       {% endfor %}
-    </div>
+    {% endcapture %}
 
+    {% if include.video %}
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="row g-3 h-100">
+          {{ essay_cards }}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ratio ratio-1x1 rounded shadow overflow-hidden bg-dark">
+          <video controls playsinline preload="metadata"
+                 poster="{{ '/assets/intro-poster.jpg' | prepend: site.baseurl }}">
+            <source src="{{ include.video | prepend: site.baseurl }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <div class="row g-3">
+      {{ essay_cards }}
+    </div>
+    {% endif %}
+
+    {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
     {% assign not_draft = 0 %}
       {% for page in essay_pages %}
       {% unless page.draft %}
